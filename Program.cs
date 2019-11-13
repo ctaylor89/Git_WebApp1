@@ -14,6 +14,12 @@ namespace Git_WebApp1
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
+            int result = RunEngine(400);
+        }
+
+        private static int RunEngine(int input)
+        {
+            return 10 * input;
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
